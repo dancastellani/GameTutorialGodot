@@ -1,0 +1,19 @@
+[gd_scene load_steps=3 format=3 uid="uid://bidptwihch8l4"]
+
+[ext_resource type="Texture2D" uid="uid://dt5oioxli7rpp" path="res://Dude-Jump (32x32).png" id="1_6cn4p"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_dyefj"]
+radius = 20.0
+height = 66.0
+
+[node name="CharacterBody2D-Duck" type="CharacterBody2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(-2, 2.5)
+scale = Vector2(2, 2.09375)
+texture = ExtResource("1_6cn4p")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, 2.5)
+shape = SubResource("CapsuleShape2D_dyefj")

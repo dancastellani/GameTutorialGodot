@@ -1,0 +1,144 @@
+[gd_scene load_steps=21 format=3 uid="uid://be3sfy7vmlqds"]
+
+[ext_resource type="Texture2D" uid="uid://bilawv3niaugk" path="res://Assets/Items/Fruits/Cherries.png" id="1_rjvqu"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_4kx74"]
+atlas = ExtResource("1_rjvqu")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_cgw5b"]
+atlas = ExtResource("1_rjvqu")
+region = Rect2(32, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_3krun"]
+atlas = ExtResource("1_rjvqu")
+region = Rect2(64, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_etk8h"]
+atlas = ExtResource("1_rjvqu")
+region = Rect2(96, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ts50u"]
+atlas = ExtResource("1_rjvqu")
+region = Rect2(128, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_x4mw0"]
+atlas = ExtResource("1_rjvqu")
+region = Rect2(160, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_klyw5"]
+atlas = ExtResource("1_rjvqu")
+region = Rect2(192, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_4dqgw"]
+atlas = ExtResource("1_rjvqu")
+region = Rect2(224, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_cv27c"]
+atlas = ExtResource("1_rjvqu")
+region = Rect2(256, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_prrf4"]
+atlas = ExtResource("1_rjvqu")
+region = Rect2(288, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_rqy1p"]
+atlas = ExtResource("1_rjvqu")
+region = Rect2(320, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_fh02g"]
+atlas = ExtResource("1_rjvqu")
+region = Rect2(352, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_rt88r"]
+atlas = ExtResource("1_rjvqu")
+region = Rect2(384, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_1w6pv"]
+atlas = ExtResource("1_rjvqu")
+region = Rect2(416, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_sf2lm"]
+atlas = ExtResource("1_rjvqu")
+region = Rect2(448, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_fbk04"]
+atlas = ExtResource("1_rjvqu")
+region = Rect2(480, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_426dr"]
+atlas = ExtResource("1_rjvqu")
+region = Rect2(512, 0, 32, 32)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_juj4a"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_4kx74")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_cgw5b")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_3krun")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_etk8h")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ts50u")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_x4mw0")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_klyw5")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_4dqgw")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_cv27c")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_prrf4")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_rqy1p")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_fh02g")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_rt88r")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_1w6pv")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_sf2lm")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_fbk04")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_426dr")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_bytib"]
+radius = 7.0
+
+[node name="Area2D" type="Area2D"]
+
+[node name="AnimatableBody2D_Fruit" type="AnimatedSprite2D" parent="."]
+texture_filter = 1
+position = Vector2(32, 23)
+sprite_frames = SubResource("SpriteFrames_juj4a")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(32, 23)
+shape = SubResource("CircleShape2D_bytib")
